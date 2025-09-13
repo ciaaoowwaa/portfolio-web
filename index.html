@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afa | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="png" href="favicon.ico (32×32).png">
+
+
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-black shadow-md z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      <h1 class="text-pink-300 font-bold text-xl">PORTFOLIO | Afa Naurah Halwa Putri</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#home" class="hover:text-pink-300">Home</a>
+        <a href="#about" class="hover:text-pink-300">About</a>
+        <a href="#portfolio" class="hover:text-pink-300">Project</a>
+        <a href="#blog" class="hover:text-pink-300">Contact</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden text-pink-300 text-2xl">☰</button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden flex-col bg-black md:hidden px-6 pb-4">
+      <a href="#home" class="py-2 hover:text-pink-300">Home</a>
+      <a href="#about" class="py-2 hover:text-pink-300">About</a>
+      <a href="#portfolio" class="py-2 hover:text-pink-300">Project</a>
+      <a href="#blog" class="py-2 hover:text-pink-300">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+<section id="home" class="min-h-screen flex items-center justify-center text-center px-6 bg-black">
+  <style>
+    /* Foto floating */
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+      100% { transform: translateY(0px); }
+    }
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+    /* Glow lebih soft */
+    .soft-glow {
+      box-shadow: 0 0 10px #f9a8d4, 0 0 20px #ec4899;
+    }
+
+    /* Fade in teks */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 1s ease-out forwards;
+      opacity: 0;
+    }
+
+    /* Typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+    .typing {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid #f9a8d4;
+      width: 0;
+      animation: typing 3s steps(30, end) forwards, blink .7s step-end infinite;
+      display: inline-block;
+    }
+  </style>
+
+  <div>
+    <!-- Foto -->
+    <img src="https://i.ibb.co.com/sJ60SYgr/foto-non-formal-skaala-1-1.jpg" alt="profile"
+         class="w-40 h-40 rounded-full mx-auto border-4 border-pink-300 shadow-lg animate-float soft-glow">
+    <h2 class="mt-6 text-3xl font-bold animate-fadeInUp" style="animation-delay:0.5s;">
+      Hello, I'm <span class="text-pink-300">Afa Naurah Halwa Putri</span>
+    </h2>
+    <!-- Subtitle dengan typing -->
+    <p class="mt-2 text-lg text-gray-200 animate-fadeInUp" style="animation-delay:1s;">
+      <span class="typing">Web Developer | UI/UX Enthusiast</span>
+    </p>
+    <!-- Deskripsi -->
+    <p class="text-gray-400 animate-fadeInUp" style="animation-delay:4s;">
+      Welcome to my personal Website 👋
+    </p>
+  </div>
+</section>
+
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-black px-6">
+    <div class="max-w-5xl mx-auto text-center md:text-left flex flex-col md:flex-row gap-10 items-center">
+      <img src="https://i.ibb.co.com/sJ60SYgr/foto-non-formal-skaala-1-1.jpg" alt="about" class="w-40 h-40 rounded-full border-2 border-pink-300">
+      <div>
+        <h3 class="text-2xl font-bold mb-4">About Me</h3>
+        <p class="text-gray-300 leading-relaxed">
+          Hi everyone! My name is Afa Naurah Halwa Putri. I am a web developer passionate about creating functional and user-friendly digital solutions. During my internship at PT KCIC, I contributed to developing a Lost and Found web application using PHP, MySQL, HTML, and CSS, gaining hands-on experience in building practical web solutions. In addition to web development, I supported administrative tasks, including documentation, report preparation, and assisting in IT-related audits, which strengthened my attention to detail and organizational skills. I am also exploring UI/UX design with Figma, focusing on wireframing and prototyping to enhance user experience.
+          I enjoy working in collaborative environments, solving problems creatively, and continuously improving my technical and design abilities. By combining development experience, administrative skills, and an understanding of user-centered design, I aim to deliver applications that are both functional and effective in meeting real-world needs.
+        </p>
+        <h4 class="mt-6 text-xl font-bold">Skills</h4>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+  <div class="p-4 border border-pink-300 rounded-lg flex items-center space-x-2 hover:scale-105 transition transform duration-300 cursor-pointer">
+    <i class="fab fa-html5 text-pink-500 text-xl"></i>
+    <span>HTML</span>
+  </div>
+  <div class="p-4 border border-pink-300 rounded-lg flex items-center space-x-2 hover:scale-105 transition transform duration-300 cursor-pointer">
+    <i class="fab fa-css3-alt text-pink-500 text-xl"></i>
+    <span>CSS</span>
+  </div>
+  <div class="p-4 border border-pink-300 rounded-lg flex items-center space-x-2 hover:scale-105 transition transform duration-300 cursor-pointer">
+    <i class="fab fa-php text-pink-500 text-xl"></i>
+    <span>PHP</span>
+  </div>
+  <div class="p-4 border border-pink-300 rounded-lg flex items-center space-x-2 hover:scale-105 transition transform duration-300 cursor-pointer">
+    <i class="fas fa-database text-pink-500 text-xl"></i>
+    <span>MySQL</span>
+  </div>
+  <div class="p-4 border border-pink-300 rounded-lg flex items-center space-x-2 hover:scale-105 transition transform duration-300 cursor-pointer">
+    <i class="fas fa-file-word text-pink-500 text-xl"></i>
+    <span>Ms.Office</span>
+  </div>
+  <div class="p-4 border border-pink-300 rounded-lg flex items-center space-x-2 hover:scale-105 transition transform duration-300 cursor-pointer">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="figma" class="w-5 h-5">
+    <span>Figma</span>
+  </div>
+  <div class="p-4 border border-pink-300 rounded-lg flex items-center space-x-2 hover:scale-105 transition transform duration-300 cursor-pointer">
+  <i class="fas fa-palette text-pink-500 text-xl"></i>
+  <span>Canva</span>
+</div>  
+  <div class="p-4 border border-pink-300 rounded-lg flex items-center space-x-2 hover:scale-105 transition transform duration-300 cursor-pointer">
+    <i class="fas fa-microchip text-pink-500 text-xl"></i>
+    <span>IoT</span>
+  </div>
+  <div class="p-4 border border-pink-300 rounded-lg flex items-center space-x-2 hover:scale-105 transition transform duration-300 cursor-pointer">
+    <i class="fas fa-microchip text-pink-500 text-xl"></i>
+    <span>Microcontroller</span>
+  </div>
+  <div class="p-4 border border-pink-300 rounded-lg flex items-center space-x-2 hover:scale-105 transition transform duration-300 cursor-pointer">
+    <i class="fas fa-network-wired text-pink-500 text-xl"></i>
+    <span>Networking</span>
+  </div>
+</div>
+
+
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+<section id="portfolio" class="py-20 bg-black px-6">
+  <div class="max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-14 text-pink-400">Past Project Experience</h3>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Project 1 -->
+      <div class="border-2 border-pink-400 p-5 rounded-xl bg-gray-900 hover:scale-105 hover:shadow-lg hover:shadow-pink-500/30 transition duration-300">
+        <img src="https://i.ibb.co.com/F4vLvBcp/5.png" alt="project" class="rounded-lg mb-4 w-full h-48 object-cover cursor-pointer" onclick="openModal(this.src)">
+        <h4 class="font-bold text-pink-400 text-lg mb-2">UIUX Design “SEEKERS” Lost and Found at PT.KCIC</h4>
+        <p class="text-gray-300 text-sm mb-3">Designed an intuitive user interface and efficient user experience for the “SEEKERS” Lost and Found application to simplify the search and management of lost items at KCIC.</p>
+        <div class="flex gap-2 flex-wrap">
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">Figma Design</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="border-2 border-pink-400 p-5 rounded-xl bg-gray-900 hover:scale-105 hover:shadow-lg hover:shadow-pink-500/30 transition duration-300">
+        <img src="https://i.ibb.co.com/9mvKFP9r/6.png" alt="project" class="rounded-lg mb-4 w-full h-48 object-cover cursor-pointer" onclick="openModal(this.src)">
+        <h4 class="font-bold text-pink-400 text-lg mb-2">Development of Website-Based Lost and Found "SEEKERS"</h4>
+        <p class="text-gray-300 text-sm mb-3">Developed a web-based Lost and Found application using the Scrum method, featuring reporting, searching, and management of lost items accessible through a responsive dashboard.</p>
+        <div class="flex gap-2 flex-wrap">
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">PHP</span>
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">HTML</span>
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">CSS</span>
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">MySQL</span>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="border-2 border-pink-400 p-5 rounded-xl bg-gray-900 hover:scale-105 hover:shadow-lg hover:shadow-pink-500/30 transition duration-300">
+        <img src="https://i.ibb.co.com/q33m8qfJ/3.png" alt="project" class="rounded-lg mb-4 w-full h-48 object-cover cursor-pointer" onclick="openModal(this.src)">
+        <h4 class="font-bold text-pink-400 text-lg mb-2">Face, Eye and Mouth Detection with Python</h4>
+        <p class="text-gray-300 text-sm mb-3">This system uses OpenCV in Python with a Haar Cascade Classifier and Multi-Scale Detector to detect faces, eyes, and mouths under various conditions and distances, making it effective for facial recognition and gesture-based interaction applications.</p>
+        <div class="flex gap-2 flex-wrap">
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">Python</span>
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">OpenCV</span>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="border-2 border-pink-400 p-5 rounded-xl bg-gray-900 hover:scale-105 hover:shadow-lg hover:shadow-pink-500/30 transition duration-300">
+        <img src="https://i.ibb.co.com/WW0PKkQh/4.png" alt="project" class="rounded-lg mb-4 w-full h-48 object-cover cursor-pointer" onclick="openModal(this.src)">
+        <h4 class="font-bold text-pink-400 text-lg mb-2">Building a Simple Web-Based Chat Application using Docker</h4>
+        <p class="text-gray-300 text-sm mb-3">A chat box program on AWS Cloud with Docker simplifies deployment in isolated containers, making it easier to move, run, and scale across AWS environments. Docker also optimizes resource usage, speeds up development, and enhances the security of the chat box application in the cloud.</p>
+        <div class="flex gap-2 flex-wrap">
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">Docker</span>
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">AWS Cloud</span>
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">JavaScript</span>
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">HTML</span>
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">CSS</span>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="border-2 border-pink-400 p-5 rounded-xl bg-gray-900 hover:scale-105 hover:shadow-lg hover:shadow-pink-500/30 transition duration-300">
+        <img src="https://i.ibb.co.com/zhqGW6b5/1.png" alt="project" class="rounded-lg mb-4 w-full h-48 object-cover cursor-pointer" onclick="openModal(this.src)">
+        <h4 class="font-bold text-pink-400 text-lg mb-2">Humidity, Temperature and Barometric Pressure Monitoring System</h4>
+        <p class="text-gray-300 text-sm mb-3">This IoT-based system monitors temperature, humidity (DHT22), and barometric pressure (BME-280), with LoRa LilyGO enabling long-range communication. Data is sent real-time to Firebase, accessible via web/mobile dashboards, and integrated with MQTT for alerts and historical analysis.</p>
+        <div class="flex gap-2 flex-wrap">
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">IoT</span>
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">LoRa</span>
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">DHT22</span>
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">BME280</span>
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">Firebase</span>
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">MQTT</span>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="border-2 border-pink-400 p-5 rounded-xl bg-gray-900 hover:scale-105 hover:shadow-lg hover:shadow-pink-500/30 transition duration-300">
+        <img src="https://i.ibb.co.com/99TvscWf/2.png" alt="project" class="rounded-lg mb-4 w-full h-48 object-cover cursor-pointer" onclick="openModal(this.src)">
+        <h4 class="font-bold text-pink-400 text-lg mb-2">Ordering Virtual Machines</h4>
+        <p class="text-gray-300 text-sm mb-3">This program features a gesture-based coffee shop ordering GUI, allowing users to select menu items with hand movements in front of a camera, making the ordering process faster, more efficient, and user-friendly.</p>
+        <div class="flex gap-2 flex-wrap">
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">Python</span>
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">OpenCV</span>
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">PHP</span>
+          <span class="bg-pink-300 text-gray-900 px-3 py-1 rounded-full text-sm">MySQL</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="imgModal" class="fixed inset-0 bg-black bg-opacity-80 hidden justify-center items-center z-50">
+  <span class="absolute top-5 right-8 text-white text-3xl font-bold cursor-pointer" onclick="closeModal()">&times;</span>
+  <img id="modalImage" class="max-w-3xl max-h-[90vh] rounded-lg shadow-lg">
+</div>
+
+<script>
+  function openModal(src) {
+    document.getElementById("modalImage").src = src;
+    document.getElementById("imgModal").classList.remove("hidden");
+    document.getElementById("imgModal").classList.add("flex");
+  }
+
+  function closeModal() {
+    document.getElementById("imgModal").classList.remove("flex");
+    document.getElementById("imgModal").classList.add("hidden");
+  }
+</script>
+
+
+
+<!-- Blog Section -->
+<section id="blog" class="mt-32 py-20 bg-black px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+  <!-- Kolom kiri: Follow Me -->
+  <div class="flex flex-col items-start">
+    <h3 class="text-2xl font-bold mb-4">Follow and Contact Me</h3>
+    <div class="flex gap-6 mt-2">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/afahalwa?igsh=OW54a2Y5cTE0OTYx" target="_blank"
+        class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-pink-500 text-pink-500 
+                hover:bg-pink-500 hover:text-white transition duration-300 transform hover:scale-110">
+        <i class="fab fa-instagram text-xl"></i>
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/afahalwa" target="_blank"
+        class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-pink-500 text-pink-500 
+                hover:bg-pink-500 hover:text-white transition duration-300 transform hover:scale-110">
+        <i class="fab fa-linkedin-in text-xl"></i>
+      </a>
+      <!-- Email -->
+      <a href="mailto:halwaputri83@gmail.com"
+        class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-pink-500 text-pink-500 
+                hover:bg-pink-500 hover:text-white transition duration-300 transform hover:scale-110">
+        <i class="fas fa-envelope text-xl"></i>
+      </a>
+      <!-- WhatsApp -->
+      <a href="https://wa.me/6282237229782" target="_blank"
+        class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-pink-500 text-pink-500 
+                hover:bg-pink-500 hover:text-white transition duration-300 transform hover:scale-110">
+        <i class="fab fa-whatsapp text-xl"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar tetap -->
+  <div class="bg-pink-100 p-6 rounded-lg shadow-md text-left md:col-span-2">
+    <h3 class="text-xl font-bold mb-4 text-pink-700">GET IN TOUCH 👩🏻‍💻</h3>
+    <p class="text-gray-900 mb-4">I’m always excited to explore new opportunities, collaborate on innovative projects, or discuss ideas that can lead to impactful solutions. Whether you have a project in mind, need support in development or system optimization, or are looking for a reliable partner to enhance your IT infrastructure, I’m here to help. Let’s work together to bring your vision to life. Feel free to reach out via email, connect with me on LinkedIn, or contact me directly by phone. Let’s create something great together!</p>
+  </div>
+</div>
+
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-black text-gray-400">
+    © 2025 Afa Naurah Halwa Putri. All rights reserved.
+  </footer>
+
+  <script>
+    // Toggle mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
